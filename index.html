@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的員工管理系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>歡迎來到員工管理系統</h1>
+    </header>
+    <main>
+        <section id="employee-list">
+            <h2>員工列表</h2>
+            <ul id="employee-ul">
+                <!-- 員工列表將顯示在這裡 -->
+            </ul>
+        </section>
+        <section id="add-employee">
+            <h2>新增員工</h2>
+            <form id="employee-form">
+                <label for="employee-name">姓名:</label>
+                <input type="text" id="employee-name" required>
+                <label for="employee-position">職位:</label>
+                <input type="text" id="employee-position" required>
+                <button type="submit">新增</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
