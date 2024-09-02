@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的員工管理系統</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset='UTF-8'>
+<title>Floor Plan</title>
 </head>
 <body>
-    <header>
-        <h1>歡迎來到員工管理系統</h1>
-    </header>
-    <main>
-        <section id="employee-list">
-            <h2>員工列表</h2>
-            <ul id="employee-ul">
-                <!-- 員工列表將顯示在這裡 -->
-            </ul>
-        </section>
-        <section id="add-employee">
-            <h2>新增員工</h2>
-            <form id="employee-form">
-                <label for="employee-name">姓名:</label>
-                <input type="text" id="employee-name" required>
-                <label for="employee-position">職位:</label>
-                <input type="text" id="employee-position" required>
-                <button type="submit">新增</button>
-            </form>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+<div style='position: fixed; top: 10px; left: 10px;'>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/40c6ffc8-bf50-4970-92a4-3780a502ee24.jpg")'>B1 生活美饌</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/d75a0abd-1966-4129-a40e-608807926896.jpg")'>1F 時尚美妍</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/d841461b-b15b-481b-9146-88b19f4cad6f.jpg")'>2F 知性流行</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/e4c54c35-7cce-46eb-8eda-8ac0e48a9741.jpg")'>3F 都會休閒</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/4e6d9b09-46c1-4038-99b7-1857eb98d767.jpg")'>4F 親子生活</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/0b4fa4a5-be59-46f6-a55c-4f69eba03071.jpg")'>5F 娛樂饗宴</button>
+<button onclick='showImage("https://www.tsrd.com.tw//Content/Uploads/FloorManagement/3355883e-bd35-4264-b41b-09c62776cc20.jpg")'>6F 娛樂</button>
+</div>
+<div id='image_display' style='margin-top: 50px;'>
+<img id='displayed_image' src='' style='max-width: 100%; max-height: 100%;'>
+</div>
+<script>
+function showImage(imageUrl) {
+document.getElementById('displayed_image').src = imageUrl;
+}
+</script>
 </body>
 </html>
